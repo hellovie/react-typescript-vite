@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "lint:style": "stylelint '**/*.{css,scss}'",
     "lint:style:fix": "stylelint '**/*.{css,scss}' --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -26,6 +27,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "husky": "^9.1.7",
     "sass-embedded": "^1.86.0",
     "stylelint": "^16.16.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
