@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:style": "stylelint '**/*.{css,scss}'",
+    "lint:style:fix": "stylelint '**/*.{css,scss}' --fix",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,6 +25,11 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "sass-embedded": "^1.86.0",
+    "stylelint": "^16.16.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-order": "^6.0.4",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
