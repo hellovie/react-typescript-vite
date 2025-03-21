@@ -4,6 +4,7 @@ import eslintPlugin from 'vite-plugin-eslint2'
 
 // https://vite.dev/config/
 export default defineConfig({
+    envDir: 'env',
     plugins: [
         react(),
         eslintPlugin({

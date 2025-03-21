@@ -5,6 +5,7 @@ import './App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
+  const version = import.meta.env.VITE_APP_VERSION
 
   return (
     <>
@@ -27,6 +28,9 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+      </p>
+      <p className="version-info">
+          Version: {version}
       </p>
     </>
   )
