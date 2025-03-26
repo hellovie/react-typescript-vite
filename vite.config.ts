@@ -8,6 +8,11 @@ export default defineConfig(({ mode }) => {
   const isDev = mode === 'development'
   return {
     envDir: 'env',
+    css: {
+      modules: {
+        localsConvention: 'camelCase'
+      }
+    },
     plugins: [
       react(),
       isDev && eslintPlugin({
