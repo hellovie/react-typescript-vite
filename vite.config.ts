@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 import react from '@vitejs/plugin-react'
 import eslintPlugin from 'vite-plugin-eslint2'
 import stylelintPlugin from 'vite-plugin-stylelint'
@@ -11,6 +12,11 @@ export default defineConfig(({ mode }) => {
     css: {
       modules: {
         localsConvention: 'camelCase'
+      }
+    },
+    resolve: {
+      alias: {
+        '@': resolve(__dirname, 'src')
       }
     },
     plugins: [
